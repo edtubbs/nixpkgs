@@ -42,6 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
       "INCLUDEDIR=/include"
       "LIBDIR=/lib"
       "all"
+      "install"
     ]
     ++
     # If we are not a static build, change default optee config to use paths that
