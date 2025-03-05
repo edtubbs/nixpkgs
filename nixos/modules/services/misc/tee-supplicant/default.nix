@@ -78,7 +78,7 @@ in
       serviceConfig = {
         ExecStart = toString [
           (getExe' cfg.package "tee-supplicant")
-          "--ta-dir ${taDir}"
+          "--ta-dir /run/current-system/sw/lib/${taDir}"
           "--fs-parent-path ${cfg.reeFsParentPath}"
           "--plugin-path ${cfg.pluginPath}"
         ];
